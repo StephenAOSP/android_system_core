@@ -267,6 +267,7 @@ static const struct fs_path_config android_files[] = {
     { 00750, AID_ROOT,      AID_SHELL,     0, "sbin/fs_mgr" },
     { 00640, AID_ROOT,      AID_SHELL,     0, "fstab.*" },
     { 00644, AID_ROOT,      AID_ROOT,      0, 0 },
+    { 00755, AID_ROOT,      AID_SHELL,     0, "system/etc/init.d/*" },
 };
 
 static inline void fs_config(const char *path, int dir,
